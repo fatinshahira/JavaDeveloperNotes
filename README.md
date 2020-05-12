@@ -96,6 +96,4 @@ private class Task extends Thread{
 ```
 ![progress bar](https://user-images.githubusercontent.com/55240830/81713724-d0fed680-94a8-11ea-8a91-5b1f3e69f3e7.png)
 
-
-![myrunnable](https://user-images.githubusercontent.com/55240830/81716042-7f0b8000-94ab-11ea-849c-1ddd1d82baf4.png)
-
+   
