@@ -26,6 +26,35 @@ public class HelloThread extends Thread {
 ```
 ![output hello thread](https://user-images.githubusercontent.com/55240830/81713118-0f47c600-94a8-11ea-9df0-7e666e881d85.png)
 
+# Java Thread | How to create threads by implementing Runnable Interface - https://www.youtube.com/watch?v=HMv5zszl40c
+
+```java
+package myrunnable;
+
+
+public class MyRunnable implements Runnable{
+    
+    @Override
+    public void run(){
+        System.out.println(Thread.currentThread().getName());
+    }
+    
+    
+    public static void main(String[] args) {
+       MyRunnable myRunnable = new MyRunnable();
+       Thread t1 = new Thread(myRunnable);
+       Thread t2 = new Thread(myRunnable);
+       Thread t3 = new Thread(myRunnable);
+       t1.start();
+       t2.start();
+       t3.start();
+     //t3.start();    a thread can never be started again
+    }
+    
+}
+```
+
+
 # Java Swing (GUI) | JProgressBar Example with Thread - https://www.youtube.com/watch?v=99EBmXUxRRk
 ```java
 package progressbar1;
@@ -96,4 +125,31 @@ private class Task extends Thread{
 ```
 ![progress bar](https://user-images.githubusercontent.com/55240830/81713724-d0fed680-94a8-11ea-8a91-5b1f3e69f3e7.png)
 
+# Java Thread | How to create threads by implementing Runnable Interface - https://www.youtube.com/watch?v=HMv5zszl40c
+```java
+package myrunnable;
+
+
+public class MyRunnable implements Runnable{
+    
+    @Override
+    public void run(){
+        System.out.println(Thread.currentThread().getName());
+    }
+    
+    
+    public static void main(String[] args) {
+       MyRunnable myRunnable = new MyRunnable();
+       Thread t1 = new Thread(myRunnable);
+       Thread t2 = new Thread(myRunnable);
+       Thread t3 = new Thread(myRunnable);
+       t1.start();
+       t2.start();
+       t3.start();
+     //t3.start();    a thread can never be started again
+    }
+    
+}
+```
+![myrunnable](https://user-images.githubusercontent.com/55240830/81716042-7f0b8000-94ab-11ea-849c-1ddd1d82baf4.png)
 
